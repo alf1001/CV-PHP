@@ -1,36 +1,38 @@
 body{
   font-family: 'Poppins' sans-serif;
   font-weight: 900;
-  color:white;
-}
-img{
-  float: right;
-  width: 200px;
-  height: 200px;
-  margin-left: 15px;
-}
-.comment {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.biru{
-  background-color: aliceblue;
-}
-p{
-  font-weight: 400;
-  font-size: 17px;
+  color: #465967;
+  text-align: justify;
 }
 
-.container{
-  text-align: center;
-}
-.container h1{
-  margin: 0 auto;
-  color: black;
-  font-size: 50px;
+#header{
+  font-family: "Poppins",sans-serif;
+  font-weight: 900;
+  background: #202c38;
+  color: #7ca7c5;
+  padding-top: 20px;
 }
 
-.card h1{
-  font-size: 40px;
+#container{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#column{
+  padding-bottom: 10px;
+}
+
+#image{
+  width: 250px;
+  height: auto;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+#line{
+  width: 500px;
+  height: 5px;
+  background: rgb(141, 139, 139);
 }
