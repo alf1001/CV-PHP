@@ -31,6 +31,7 @@ $data = mysqli_fetch_array($result);
         <h1 class="nombre py-4 pt-5"><?php echo $data['nama']; ?></h1>
         <p id="line"></p>
         <!-- <h2 id="description">Fullstack Developer</h2> -->
+        <h2 class="py-3" id="description"><?php echo $data['deskripsi']; ?></h2>
       </div>
     </div>
     <div class="row">
@@ -55,7 +56,10 @@ $data = mysqli_fetch_array($result);
       </div>
       <div class="col-md-12">
         <h4 id="Pendidikan">Pendidikan</h4>
-        <p><?php echo $data['pendidikan'];?></p>
+        <p><?php $arrayPendidikan = explode(",", $data['pendidikan']);
+        foreach ($arrayPendidikan as $nilai) {
+            echo $nilai . '<br>';
+        } ?></p>
       </div>
       <div class="col-md-12">
         <h4 id="Pengalaman-kerja">Pengalaman Kerja</h4>
@@ -66,7 +70,7 @@ $data = mysqli_fetch_array($result);
         <?php echo $data['keterampilan']; ?>
       </div>
     </div>
-    <div>
+    <div class="pt-3">
       <a class="btn btn-warning" href="admin.php">Update</a>
     </div>
   </div>
